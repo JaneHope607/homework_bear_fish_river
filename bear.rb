@@ -9,7 +9,7 @@ class Bear
     end
 
     def get_fish_from_river(fish)
-        take fish away from river
+        @fishes.delete(fish)
         @stomach.push(fish)
     end
 

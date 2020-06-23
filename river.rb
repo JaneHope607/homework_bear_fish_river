@@ -1,14 +1,19 @@
 class River
 
-    attr_reader :name, :fish_number
+    attr_reader :name 
+    attr_accessor :fishes
     
-    def initialize(name, fish_number)
-            @name = name
-            @fish_number = fish_number
+    def initialize(name, fishes)
+        @name = name
+        @fishes = fishes
     end
 
     def count_fish()
-        return @fish_number.length()
+        return @fishes.length()
+    end
+
+    def remove_fish(name)
+        @fishes.delete(name)
     end
 
 end
