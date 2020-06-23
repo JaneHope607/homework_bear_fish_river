@@ -15,5 +15,13 @@ class FishTest < MiniTest::Test
         @fish3 = Fish.new("Tuna")
         @fish4 = Fish.new("Trout")
         @fish5 = Fish.new("Eel")
+
+        @fishes = [@fish1, @fish2, @fish3, @fish4, @fish5]
+
     end
+
+    def test_fish_name()
+        assert_equal("Salmon", @fish1.name())
+    end
+
 end

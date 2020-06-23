@@ -9,9 +9,16 @@ require_relative('../river.rb')
 class RiverTest < MiniTest::Test
 
     def setup()
-        @river = River.new("Amazon", @fish)
+        @river = River.new("Amazon", @fish_array)
 
-        @fish = [@fish1, @fish2, @fish3, @fish4, @fish5]
+        @fish1 = Fish.new("Salmon")
+        @fish2 = Fish.new("Bream")
+        @fish3 = Fish.new("Tuna")
+        @fish4 = Fish.new("Trout")
+        @fish5 = Fish.new("Eel")
+
+        @fishes = [@fish1, @fish2, @fish3, @fish4, @fish5]
+
     end
 
     def test_can_create_river()
