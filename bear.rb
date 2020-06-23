@@ -7,3 +7,5 @@ class Bear
         @type = type
         @stomach = []
     end
+
+end

@@ -11,3 +11,5 @@ class RiverTest < MiniTest::Test
     def setup()
         @new_river = River.new("Amazon")
     end
+
+end

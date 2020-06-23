@@ -6,3 +6,5 @@ class River
             @name = name
             @fish = ["salmon", "tuna", "bream", "carp", "trout"]
     end
+
+end
