@@ -8,9 +8,15 @@ class Bear
         @stomach = []
     end
 
-    def get_fish_from_river(fish)
-        @fishes.delete(fish)
+    def food_count()
+        return @stomach.length()
+    end
+
+    def add_to_stomach(fish)
         @stomach.push(fish)
     end
 
+    def roar()
+        return "ROARRR"
+    end
 end

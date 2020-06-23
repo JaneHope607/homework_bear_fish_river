@@ -12,10 +12,6 @@ class BearTest < MiniTest::Test
         @bear = Bear.new("Yogi", "Grizzly")
     end
 
-    def test_can_create_bear()
-        assert_equal(Bear, @bear.class())
-    end
-
     def test_bear_name()
         assert_equal("Yogi", @bear.name())
     end
@@ -24,8 +20,16 @@ class BearTest < MiniTest::Test
         assert_equal("Grizzly", @bear.type)
     end
 
+    def test_food_count()
+        assert_equal(0, @bear.food_count())
+    end
+
     def test_get_fish_from_river()
 
+    end
+
+    def test_roar()
+        assert_equal("ROARRR", @bear.roar)
     end
 
 end
