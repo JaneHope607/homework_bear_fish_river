@@ -24,4 +24,8 @@ class BearTest < MiniTest::Test
         assert_equal("Grizzly", @bear.type)
     end
 
+    def test_get_fish_from_river()
+
+    end
+
 end
