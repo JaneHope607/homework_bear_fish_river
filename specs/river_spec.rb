@@ -9,7 +9,19 @@ require_relative('../river.rb')
 class RiverTest < MiniTest::Test
 
     def setup()
-        @new_river = River.new("Amazon")
+        @river = River.new("Amazon", @fish)
+
+        @fish1 = Fish.new("Salmon")
+        @fish2 = Fish.new("Bream")
+        @fish3 = Fish.new("Tuna")
+        @fish4 = Fish.new("Trout")
+        @fish5 = Fish.new("Eel")
+
+        @fishes = [@fish1, @fish2, @fish3, @fish4, @fish5]
+    end
+
+    def test_can_create_river()
+        assert_equal(River, @river.class)
     end
 
 end

@@ -4,7 +4,7 @@ class River
     
     def initialize(name, fish)
             @name = name
-            @fish = ["salmon", "tuna", "bream", "carp", "trout"]
+            @fish = []
     end
 
 end
